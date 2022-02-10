@@ -176,7 +176,7 @@ while True:
             pyreadline.Readline().set_completer(completer)
         else:
             gnureadline.parse_and_bind("tab: complete")
-            gnureadline.set_completer(completer)
+            readline.set_completer(completer)
         pc.printout("Run a command: ", pc.YELLOW)
         cmd = input()
 
